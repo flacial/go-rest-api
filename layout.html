@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Golang HTTP server with templates</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            background-color: yellow;
+            color: black;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 1.5;
+        }
+
+        main {
+            max-width: fit-content;
+            margin-inline: auto;
+            margin-top: auto;
+        }
+
+        h1 {
+            font-size: 4rem;
+            text-align: center;
+        }
+
+        p {
+            font-size: 2rem;
+            font-weight: 400;
+            margin-top: 2rem;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>
+            {{.PageTitle}}
+        </h1>
+        <p>
+            {{.PageSubtitle}}
+        </p>
+    </main>
+</body>
+
+</html>
